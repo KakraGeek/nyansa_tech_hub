@@ -51,10 +51,10 @@ export default function Navigation() {
         : 'bg-transparent'
     }`}>
       <div className="container-max">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-16 lg:h-20 min-w-0">
           {/* Logo */}
-          <div className="flex items-center flex-shrink-0">
-            <div className="relative w-10 h-10 lg:w-12 lg:h-12 mr-2 sm:mr-3">
+          <div className="flex items-center flex-shrink-0 min-w-0">
+            <div className="relative w-10 h-10 lg:w-12 lg:h-12 mr-2 sm:mr-3 flex-shrink-0">
               <Image
                 src="/images/logo.jpg"
                 alt="Nyansa Tech Hub"
@@ -63,11 +63,11 @@ export default function Navigation() {
                 sizes="(max-width: 640px) 40px, 48px"
               />
             </div>
-            <div className="hidden sm:block">
-              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-nyansa-dark-gray">
+            <div className="hidden sm:block min-w-0">
+              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-nyansa-dark-gray truncate">
                 Nyansa Tech Hub
               </h1>
-              <p className="text-xs sm:text-sm text-nyansa-dark-gray/70">
+              <p className="text-xs sm:text-sm text-nyansa-dark-gray/70 truncate">
                 Empowering Africa&apos;s Tech Innovation
               </p>
             </div>
@@ -125,12 +125,12 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden touch-target p-2 text-nyansa-dark-gray hover:text-nyansa-light-blue transition-colors duration-200 flex-shrink-0 ml-2"
+            className="lg:hidden w-10 h-10 flex items-center justify-center text-nyansa-dark-gray hover:text-nyansa-light-blue transition-colors duration-200 flex-shrink-0 ml-1 relative z-10"
             aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
 
