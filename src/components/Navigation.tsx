@@ -63,14 +63,16 @@ export default function Navigation() {
                 sizes="(max-width: 640px) 40px, 48px"
               />
             </div>
-            <div className="min-w-0">
-              <h1 className="text-sm sm:text-lg lg:text-xl xl:text-2xl font-bold text-nyansa-light-blue truncate">
-                Nyansa Tech Hub
-              </h1>
-              <p className="hidden sm:block text-xs sm:text-sm text-nyansa-dark-gray/70 truncate">
-                Empowering Africa&apos;s Tech Innovation
-              </p>
-            </div>
+                         <div className="min-w-0">
+               <h1 className="text-sm sm:text-lg lg:text-xl xl:text-2xl font-bold truncate">
+                 <span className="text-nyansa-light-blue">Nyansa</span>{' '}
+                 <span className="text-nyansa-accent">Tech</span>{' '}
+                 <span className="text-nyansa-complementary">Hub</span>
+               </h1>
+               <p className="hidden sm:block text-xs sm:text-sm text-nyansa-dark-gray/70 truncate">
+                 Empowering Africa&apos;s Tech Innovation
+               </p>
+             </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -149,10 +151,14 @@ export default function Navigation() {
                     sizes="32px"
                   />
                 </div>
-                <div>
-                  <h2 className="text-lg font-bold text-nyansa-light-blue">Nyansa Tech Hub</h2>
-                  <p className="text-xs text-nyansa-dark-gray/70">Empowering Africa&apos;s Tech Innovation</p>
-                </div>
+                                 <div>
+                   <h2 className="text-lg font-bold">
+                     <span className="text-nyansa-light-blue">Nyansa</span>{' '}
+                     <span className="text-nyansa-accent">Tech</span>{' '}
+                     <span className="text-nyansa-complementary">Hub</span>
+                   </h2>
+                   <p className="text-xs text-nyansa-dark-gray/70">Empowering Africa&apos;s Tech Innovation</p>
+                 </div>
               </div>
             </div>
             <div className="px-4 py-6 space-y-4 max-h-[calc(100vh-8rem)] overflow-y-auto">
