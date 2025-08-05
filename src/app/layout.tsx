@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: 'Nyansa Tech Hub',
     images: [
       {
-        url: '/images/social_preview_logo.jpg',
+        url: 'https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg',
         width: 1200,
         height: 630,
         alt: 'Nyansa Tech Hub - Technology Training and Innovation Center',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
     description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
-    images: ['/images/social_preview_logo.jpg'],
+    images: ['https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg'],
   },
   robots: {
     index: true,
