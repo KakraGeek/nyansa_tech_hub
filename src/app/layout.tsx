@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     siteName: 'Nyansa Tech Hub',
     images: [
       {
-        url: 'https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg',
-        width: 1200,
-        height: 630,
+        url: 'https://nyansa-tech-hub-web.vercel.app/images/logo.jpg',
+        width: 800,
+        height: 600,
         alt: 'Nyansa Tech Hub - Technology Training and Innovation Center',
         type: 'image/jpeg',
       },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
     description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
-    images: ['https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg'],
+    images: ['https://nyansa-tech-hub-web.vercel.app/images/logo.jpg'],
   },
   robots: {
     index: true,
@@ -74,15 +74,15 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         {/* Additional meta tags for better social media support */}
-        <meta property="og:image" content="https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image" content="https://nyansa-tech-hub-web.vercel.app/images/logo.jpg" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="600" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:alt" content="Nyansa Tech Hub - Technology Training and Innovation Center" />
-        <meta name="twitter:image" content="https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg" />
+        <meta name="twitter:image" content="https://nyansa-tech-hub-web.vercel.app/images/logo.jpg" />
         <meta name="twitter:image:alt" content="Nyansa Tech Hub - Technology Training and Innovation Center" />
         {/* WhatsApp specific meta tags */}
-        <meta property="og:image:secure_url" content="https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg" />
+        <meta property="og:image:secure_url" content="https://nyansa-tech-hub-web.vercel.app/images/logo.jpg" />
       </head>
       <body className={inter.className}>
         {/* Skip to main content link for accessibility */}
