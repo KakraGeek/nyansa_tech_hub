@@ -6,9 +6,9 @@ import Navigation from '@/components/Navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Nyansa Tech Hub - Empowering Africa\'s Tech Innovation',
-  description: 'Nyansa Tech Hub is a leading technology training and innovation center in Ghana, offering comprehensive programs in tech training, career assistance, and professional development.',
-  keywords: 'tech hub, technology training, Ghana, innovation, STEM, career development, professional training',
+  title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana | Web Development, Mobile Apps, Data Science',
+  description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate. Industry-aligned curriculum with hands-on training.',
+  keywords: 'tech training Ghana, technology education Africa, coding bootcamp Accra, software development training, digital skills training Ghana, tech innovation hub, programming courses Ghana, web development training, mobile app development Ghana, data science training Africa, STEM education Ghana, computer programming courses, IT training center Accra, technology skills development, digital transformation training, cloud computing courses, cybersecurity training Ghana, UI/UX design courses, DevOps training Africa, artificial intelligence courses, best tech training institute Ghana, professional software development courses Accra, career assistance technology Ghana, tech mentorship programs Africa, industry-aligned tech curriculum Ghana, hands-on technology training, tech career placement services, innovation hub tech education, professional development technology, tech entrepreneurship training Ghana',
   authors: [{ name: 'Nyansa Tech Hub' }],
   creator: 'Nyansa Tech Hub',
   publisher: 'Nyansa Tech Hub',
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Nyansa Tech Hub - Empowering Africa\'s Tech Innovation',
-    description: 'Leading technology training and innovation center in Ghana',
+    title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
+    description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
     url: 'https://nyansa-tech-hub-web.vercel.app',
     siteName: 'Nyansa Tech Hub',
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Nyansa Tech Hub',
+        alt: 'Nyansa Tech Hub - Technology Training and Innovation Center',
       },
     ],
     locale: 'en_US',
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nyansa Tech Hub - Empowering Africa\'s Tech Innovation',
-    description: 'Leading technology training and innovation center in Ghana',
+    title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
+    description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
     images: ['/images/og-image.jpg'],
   },
   robots: {
@@ -53,6 +53,14 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  category: 'Technology Education',
+  classification: 'Technology Training Institute',
+  other: {
+    'geo.region': 'GH',
+    'geo.placename': 'Accra, Ghana',
+    'geo.position': '5.5600;-0.2057',
+    'ICBM': '5.5600, -0.2057',
   },
 }
 
