@@ -32,6 +32,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'Nyansa Tech Hub - Technology Training and Innovation Center',
+        type: 'image/jpeg',
       },
     ],
     locale: 'en_US',
@@ -71,6 +72,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* Additional meta tags for better social media support */}
+        <meta property="og:image" content="https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:alt" content="Nyansa Tech Hub - Technology Training and Innovation Center" />
+        <meta name="twitter:image" content="https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg" />
+        <meta name="twitter:image:alt" content="Nyansa Tech Hub - Technology Training and Innovation Center" />
+        {/* WhatsApp specific meta tags */}
+        <meta property="og:image:secure_url" content="https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg" />
+      </head>
       <body className={inter.className}>
         {/* Skip to main content link for accessibility */}
         <a 
