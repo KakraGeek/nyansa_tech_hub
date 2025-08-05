@@ -31,6 +31,23 @@
     @apply max-w-7xl mx-auto px-2 sm:px-6 lg:px-8;
   }
 
+  /* Mobile-specific navigation fixes */
+  @media (max-width: 640px) {
+    .container-max {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    
+    /* Ensure hamburger menu is always visible on mobile */
+    nav button[aria-controls="mobile-menu"] {
+      position: relative !important;
+      right: auto !important;
+      margin-left: 0.5rem !important;
+      min-width: 48px !important;
+      min-height: 48px !important;
+    }
+  }
+
   /* Responsive typography */
   .responsive-heading {
     @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold;
