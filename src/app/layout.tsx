@@ -28,11 +28,11 @@ export const metadata: Metadata = {
     siteName: 'Nyansa Tech Hub',
     images: [
       {
-        url: 'https://via.placeholder.com/1200x630/0066cc/ffffff?text=Nyansa+Tech+Hub',
+        url: 'https://picsum.photos/1200/630',
         width: 1200,
         height: 630,
         alt: 'Nyansa Tech Hub - Technology Training and Innovation Center',
-        type: 'image/png',
+        type: 'image/jpeg',
       },
     ],
     locale: 'en_US',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
     description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
-    images: ['https://via.placeholder.com/1200x630/0066cc/ffffff?text=Nyansa+Tech+Hub'],
+    images: ['https://picsum.photos/1200/630'],
   },
   robots: {
     index: true,
@@ -73,16 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Additional meta tags for better social media support */}
-        <meta property="og:image" content="https://via.placeholder.com/1200x630/0066cc/ffffff?text=Nyansa+Tech+Hub" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:alt" content="Nyansa Tech Hub - Technology Training and Innovation Center" />
-        <meta name="twitter:image" content="https://via.placeholder.com/1200x630/0066cc/ffffff?text=Nyansa+Tech+Hub" />
-        <meta name="twitter:image:alt" content="Nyansa Tech Hub - Technology Training and Innovation Center" />
-        {/* WhatsApp specific meta tags */}
-        <meta property="og:image:secure_url" content="https://via.placeholder.com/1200x630/0066cc/ffffff?text=Nyansa+Tech+Hub" />
+        {/* Let Next.js handle all metadata generation */}
       </head>
       <body className={inter.className}>
         {/* Skip to main content link for accessibility */}
