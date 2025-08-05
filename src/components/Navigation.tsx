@@ -65,9 +65,9 @@ export default function Navigation() {
             </div>
                          <div className="min-w-0">
                <h1 className="text-sm sm:text-lg lg:text-xl xl:text-2xl font-bold truncate">
-                 <span className="text-nyansa-light-blue">Nyansa</span>{' '}
-                 <span className="text-nyansa-accent">Tech</span>{' '}
-                 <span className="text-nyansa-complementary">Hub</span>
+                 <span className="text-nyansa-dark-gray">Nyansa</span>{' '}
+                 <span className="text-nyansa-light-blue">Tech</span>{' '}
+                 <span className="text-nyansa-dark-gray">Hub</span>
                </h1>
                <p className="hidden sm:block text-xs sm:text-sm text-nyansa-dark-gray/70 truncate">
                  Empowering Africa&apos;s Tech Innovation
@@ -153,9 +153,9 @@ export default function Navigation() {
                 </div>
                                  <div>
                    <h2 className="text-lg font-bold">
-                     <span className="text-nyansa-light-blue">Nyansa</span>{' '}
-                     <span className="text-nyansa-accent">Tech</span>{' '}
-                     <span className="text-nyansa-complementary">Hub</span>
+                     <span className="text-nyansa-dark-gray">Nyansa</span>{' '}
+                     <span className="text-nyansa-light-blue">Tech</span>{' '}
+                     <span className="text-nyansa-dark-gray">Hub</span>
                    </h2>
                    <p className="text-xs text-nyansa-dark-gray/70">Empowering Africa&apos;s Tech Innovation</p>
                  </div>
