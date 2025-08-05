@@ -63,11 +63,11 @@ export default function Navigation() {
                 sizes="(max-width: 640px) 40px, 48px"
               />
             </div>
-            <div className="hidden sm:block min-w-0">
-              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-nyansa-dark-gray truncate">
+            <div className="min-w-0">
+              <h1 className="text-sm sm:text-lg lg:text-xl xl:text-2xl font-bold text-nyansa-light-blue truncate">
                 Nyansa Tech Hub
               </h1>
-              <p className="text-xs sm:text-sm text-nyansa-dark-gray/70 truncate">
+              <p className="hidden sm:block text-xs sm:text-sm text-nyansa-dark-gray/70 truncate">
                 Empowering Africa&apos;s Tech Innovation
               </p>
             </div>
@@ -137,7 +137,25 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div id="mobile-menu" className="lg:hidden bg-white border-t border-gray-200 shadow-lg" role="navigation" aria-label="Mobile navigation">
-            <div className="px-4 py-6 space-y-4 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            {/* Mobile Menu Header with Brand */}
+            <div className="px-4 py-4 border-b border-gray-200 bg-nyansa-complementary/5">
+              <div className="flex items-center">
+                <div className="relative w-8 h-8 mr-3">
+                  <Image
+                    src="/images/logo.jpg"
+                    alt="Nyansa Tech Hub"
+                    fill
+                    className="object-cover rounded-lg"
+                    sizes="32px"
+                  />
+                </div>
+                <div>
+                  <h2 className="text-lg font-bold text-nyansa-light-blue">Nyansa Tech Hub</h2>
+                  <p className="text-xs text-nyansa-dark-gray/70">Empowering Africa&apos;s Tech Innovation</p>
+                </div>
+              </div>
+            </div>
+            <div className="px-4 py-6 space-y-4 max-h-[calc(100vh-8rem)] overflow-y-auto">
               {navigationItems.map((item) => (
                 <div key={item.name}>
                   {item.name === 'Programs' ? (
