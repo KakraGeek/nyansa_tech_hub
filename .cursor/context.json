@@ -1,0 +1,11 @@
+{
+  "project": "nyansa-tech-hub-site",
+  "mcp": "mcp/nyansa_tech_hub.mcp.yaml",
+  "files": [
+    { "path": "nyansatechhub_prd.md", "purpose": "product-requirements" },
+    { "path": "nyansatechhub_architecture_schema.md", "purpose": "architecture-schema" },
+    { "path": "smart_prompts_nyansatechhub.md", "purpose": "task-list" },
+    { "path": "playwright.config.ts", "purpose": "test-config" },
+    { "path": "tests/", "purpose": "tests" }
+  ]
+}

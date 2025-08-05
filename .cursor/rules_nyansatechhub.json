@@ -1,0 +1,25 @@
+{
+  "code_quality": {
+    "debug": true,
+    "clean_up": true,
+    "remove_unused_code": true
+  },
+  "security": {
+    "apply_owasp_top_10": true,
+    "enable_input_validation": true,
+    "prevent_spam_on_forms": true
+  },
+  "error_handling": {
+    "catch_and_log_client_errors": true,
+    "handle_form_errors_gracefully": true
+  },
+  "ui_consistency": {
+    "enforce_brand_colors": true,
+    "verify_tailwind_theme_extensions": true
+  },
+  "accessibility": {
+    "a11y_compliance": true,
+    "semantic_html_required": true,
+    "color_contrast_enforced": true
+  }
+}

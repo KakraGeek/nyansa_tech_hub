@@ -1,0 +1,35 @@
+version: '1.0'
+id: nyansa_tech_hub
+name: Nyansa Tech Hub Website
+description: Brochureware website for Nyansa Tech Hub showcasing initiatives, spaces,
+  and partners.
+entry: smart_prompts_nyansatechhub.md
+tasks:
+- id: project_setup
+  file: smart_prompts_nyansatechhub.md
+  purpose: initialize project with Next.js, Tailwind CSS, ShadCN UI, and brand theming
+- id: routing_and_structure
+  file: smart_prompts_nyansatechhub.md
+  purpose: set up page routing and directory scaffolding
+- id: component_implementation
+  file: smart_prompts_nyansatechhub.md
+  purpose: implement UI components based on the site architecture and content strategy
+- id: security_accessibility_seo
+  file: smart_prompts_nyansatechhub.md
+  purpose: enforce OWASP Top 10, a11y best practices, and search engine optimization
+- id: form_and_error_handling
+  file: smart_prompts_nyansatechhub.md
+  purpose: integrate contact form with validation and graceful error handling
+- id: responsive_testing_deploy
+  file: smart_prompts_nyansatechhub.md
+  purpose: ensure responsiveness, conduct QA, and deploy site via Vercel
+
+servers:
+  - id: playwright
+    url: https://playwright-mcp.cursor.sh
+    language: typescript
+    entrypoint: playwright.config.ts
+    description: MCP server for Playwright test generation and management
+    tags:
+      - test
+      - playwright

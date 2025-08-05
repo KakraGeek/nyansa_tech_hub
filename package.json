@@ -1,0 +1,49 @@
+{
+  "name": "nyansa-tech-hub-web",
+  "version": "1.0.0",
+  "description": "Nyansa Tech Hub - Modern brochureware website showcasing initiatives, spaces, and partnerships",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:install": "playwright install"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.263.1",
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwind-merge": "^2.0.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "autoprefixer": "^10.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0",
+    "postcss": "^8.0.0",
+    "tailwindcss": "^3.4.0"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "nyansa-tech-hub"
+  ],
+  "author": "Nyansa Tech Hub",
+  "license": "ISC"
+}

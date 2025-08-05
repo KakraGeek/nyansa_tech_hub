@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-nyansa-white text-nyansa-dark-gray;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-nyansa-light-blue hover:bg-nyansa-accent text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-nyansa-light-blue text-nyansa-light-blue hover:bg-nyansa-light-blue hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .section-padding {
+    @apply py-12 px-4 sm:py-16 sm:px-6 lg:py-20 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Responsive typography */
+  .responsive-heading {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+
+  .responsive-subheading {
+    @apply text-lg sm:text-xl md:text-2xl font-semibold;
+  }
+
+  .responsive-body {
+    @apply text-base sm:text-lg leading-relaxed;
+  }
+
+  /* Responsive grid layouts */
+  .responsive-grid {
+    @apply grid gap-6 sm:gap-8 lg:gap-12;
+  }
+
+  .responsive-card-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8;
+  }
+
+  /* Touch-friendly interactive elements */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px] flex items-center justify-center;
+  }
+
+  /* Responsive spacing */
+  .responsive-spacing {
+    @apply space-y-6 sm:space-y-8 lg:space-y-12;
+  }
+
+  .responsive-margin {
+    @apply mb-8 sm:mb-12 lg:mb-16;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-nyansa-light-blue to-nyansa-accent bg-clip-text text-transparent;
+  }
+  
+  /* Accessibility utilities */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  /* Focus styles for better keyboard navigation */
+  .focus-visible:focus {
+    outline: 2px solid #00B6FF;
+    outline-offset: 2px;
+  }
+  
+  .focus-visible:focus:not(:focus-visible) {
+    outline: none;
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .btn-primary {
+      @apply border-2 border-current;
+    }
+    
+    .btn-secondary {
+      @apply border-2 border-current;
+    }
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+} 
