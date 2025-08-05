@@ -21,29 +21,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-             openGraph: {
-       title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
-       description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
-       url: 'https://nyansa-tech-hub-web.vercel.app',
-       siteName: 'Nyansa Tech Hub',
-               images: [
-          {
-            url: 'https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg',
-            width: 1200,
-            height: 630,
-            alt: 'Nyansa Tech Hub - Technology Training and Innovation Center',
-            type: 'image/jpeg',
-          },
-        ],
-       locale: 'en_US',
-       type: 'website',
-     },
-             twitter: {
-       card: 'summary_large_image',
-       title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
-       description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
-               images: ['https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg'],
-     },
+  openGraph: {
+    title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
+    description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
+    url: 'https://nyansa-tech-hub-web.vercel.app',
+    siteName: 'Nyansa Tech Hub',
+    images: [
+      {
+        url: '/images/social_preview_logo.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Nyansa Tech Hub - Technology Training and Innovation Center',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
+    description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
+    images: ['/images/social_preview_logo.jpg'],
+  },
   robots: {
     index: true,
     follow: true,
@@ -72,15 +71,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        {/* Explicit OpenGraph meta tags for better social media support */}
-        <meta property="og:image" content="https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:alt" content="Nyansa Tech Hub - Technology Training and Innovation Center" />
-        <meta name="twitter:image" content="https://nyansa-tech-hub-web.vercel.app/images/social_preview_logo.jpg" />
-      </head>
       <body className={inter.className}>
         {/* Skip to main content link for accessibility */}
         <a 
