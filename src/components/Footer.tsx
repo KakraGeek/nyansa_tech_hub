@@ -139,22 +139,22 @@ export default function Footer() {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="bg-nyansa-dark-accent rounded-xl p-8 mb-8">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="bg-nyansa-dark-accent rounded-xl p-6 sm:p-8 mb-8">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-2">Stay Updated</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2">Stay Updated</h3>
+              <p className="text-gray-300 text-sm sm:text-base">
                 Subscribe to our newsletter for the latest updates on programs, 
                 events, and opportunities in tech education.
               </p>
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-white text-nyansa-dark-gray rounded-lg focus:ring-2 focus:ring-nyansa-light-blue focus:outline-none"
+                className="flex-1 px-4 py-3 bg-white text-nyansa-dark-gray rounded-lg focus:ring-2 focus:ring-nyansa-light-blue focus:outline-none text-sm sm:text-base"
               />
-              <Button className="bg-nyansa-light-blue hover:bg-nyansa-accent">
+              <Button className="bg-nyansa-light-blue hover:bg-nyansa-accent whitespace-nowrap px-6 py-3 text-sm sm:text-base">
                 Subscribe
               </Button>
             </div>
