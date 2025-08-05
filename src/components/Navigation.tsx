@@ -53,7 +53,7 @@ export default function Navigation() {
       <div className="container-max">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center flex-shrink-0">
             <div className="relative w-10 h-10 lg:w-12 lg:h-12 mr-2 sm:mr-3">
               <Image
                 src="/images/logo.jpg"
@@ -125,7 +125,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden touch-target p-2 text-nyansa-dark-gray hover:text-nyansa-light-blue transition-colors duration-200"
+            className="lg:hidden touch-target p-2 text-nyansa-dark-gray hover:text-nyansa-light-blue transition-colors duration-200 flex-shrink-0 ml-2"
             aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
