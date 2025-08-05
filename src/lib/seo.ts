@@ -8,7 +8,7 @@ import { Metadata } from 'next'
 // Base SEO configuration
 export const SEO_CONFIG = {
   siteName: 'Nyansa Tech Hub',
-  siteUrl: 'https://nyansatechhub.com',
+  siteUrl: 'https://nyansa-tech-hub-web.vercel.app',
   siteDescription: 'Leading technology training and innovation center in Ghana, empowering Africa\'s tech innovation through comprehensive programs and world-class facilities.',
   siteKeywords: [
     'tech hub',
@@ -124,8 +124,8 @@ export function generateStructuredData({
         ...baseData,
         name: 'Nyansa Tech Hub',
         description: 'Leading technology training and innovation center in Ghana',
-        url: 'https://nyansatechhub.com',
-        logo: 'https://nyansatechhub.com/images/logo.jpg',
+        url: 'https://nyansa-tech-hub-web.vercel.app',
+        logo: 'https://nyansa-tech-hub-web.vercel.app/images/logo.jpg',
         sameAs: [
           'https://facebook.com/nyansatechhub',
           'https://twitter.com/nyansatechhub',
@@ -153,7 +153,7 @@ export function generateStructuredData({
         ...baseData,
         name: 'Nyansa Tech Hub',
         description: 'Technology training and innovation center',
-        url: 'https://nyansatechhub.com',
+        url: 'https://nyansa-tech-hub-web.vercel.app',
         telephone: '+233-20-123-4567',
         email: 'info@nyansatechhub.com',
         address: {
@@ -180,7 +180,7 @@ export function generateStructuredData({
         ...baseData,
         name: 'Nyansa Tech Hub',
         description: 'Technology education and training institution',
-        url: 'https://nyansatechhub.com',
+        url: 'https://nyansa-tech-hub-web.vercel.app',
         address: {
           '@type': 'PostalAddress',
           streetAddress: '4 Bathur Street, East Legon',
@@ -198,7 +198,7 @@ export function generateStructuredData({
         provider: {
           '@type': 'Organization',
           name: 'Nyansa Tech Hub',
-          url: 'https://nyansatechhub.com',
+          url: 'https://nyansa-tech-hub-web.vercel.app',
         },
         ...data,
       }
@@ -212,37 +212,37 @@ export function generateStructuredData({
 export function generateSitemapData() {
   return [
     {
-      url: 'https://nyansatechhub.com',
+      url: 'https://nyansa-tech-hub-web.vercel.app',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: 'https://nyansatechhub.com/#what-we-do',
+      url: 'https://nyansa-tech-hub-web.vercel.app/#what-we-do',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://nyansatechhub.com/#programs',
+      url: 'https://nyansa-tech-hub-web.vercel.app/#programs',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://nyansatechhub.com/#spaces',
+      url: 'https://nyansa-tech-hub-web.vercel.app/#spaces',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: 'https://nyansatechhub.com/#partners',
+      url: 'https://nyansa-tech-hub-web.vercel.app/#partners',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: 'https://nyansatechhub.com/#contact',
+      url: 'https://nyansa-tech-hub-web.vercel.app/#contact',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
@@ -255,7 +255,7 @@ export function generateRobotsTxt() {
   return `User-agent: *
 Allow: /
 
-Sitemap: https://nyansatechhub.com/sitemap.xml
+Sitemap: https://nyansa-tech-hub-web.vercel.app/sitemap.xml
 
 # Disallow admin and private areas
 Disallow: /admin/

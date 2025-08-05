@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://nyansatechhub.com'),
+  metadataBase: new URL('https://nyansa-tech-hub-web.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Nyansa Tech Hub - Empowering Africa\'s Tech Innovation',
     description: 'Leading technology training and innovation center in Ghana',
-    url: 'https://nyansatechhub.com',
+    url: 'https://nyansa-tech-hub-web.vercel.app',
     siteName: 'Nyansa Tech Hub',
     images: [
       {
