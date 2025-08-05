@@ -21,28 +21,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-  openGraph: {
-    title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
-    description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
-    url: 'https://nyansa-tech-hub-web.vercel.app',
-    siteName: 'Nyansa Tech Hub',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Nyansa Tech Hub - Technology Training and Innovation Center',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
-    description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
-    images: ['/images/og-image.jpg'],
-  },
+      openGraph: {
+      title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
+      description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
+      url: 'https://nyansa-tech-hub-web.vercel.app',
+      siteName: 'Nyansa Tech Hub',
+      images: [
+        {
+          url: '/images/logo.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'Nyansa Tech Hub - Technology Training and Innovation Center',
+        },
+      ],
+      locale: 'en_US',
+      type: 'website',
+    },
+      twitter: {
+      card: 'summary_large_image',
+      title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
+      description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design. 95% employment rate.',
+      images: ['/images/logo.jpg'],
+    },
   robots: {
     index: true,
     follow: true,
