@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     siteName: 'Nyansa Tech Hub',
     images: [
       {
-        url: '/images/logo.jpg',
-        width: 800,
-        height: 600,
-        alt: 'Nyansa Tech Hub Logo',
+        url: '/images/social_preview_logo.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Nyansa Tech Hub - Empowering Africa\'s Tech Innovation',
       },
     ],
     locale: 'en_US',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Nyansa Tech Hub - Leading Tech Training & Innovation Center in Ghana',
     description: 'Premier technology training and innovation center in Ghana. Expert-led courses in web development, mobile app development, data science, cybersecurity, and UI/UX design.',
-    images: ['/images/logo.jpg'],
+    images: ['/images/social_preview_logo.jpg'],
   },
   robots: {
     index: true,
