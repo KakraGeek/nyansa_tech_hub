@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
+import BookingModal from './BookingModal'
 
 const spaces = [
   {
@@ -44,9 +45,13 @@ const spaces = [
 
 export default function OurSpaces() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
 
   const openModal = (id: number) => setSelectedImage(id)
   const closeModal = () => setSelectedImage(null)
+  
+  const openBookingModal = () => setIsBookingModalOpen(true)
+  const closeBookingModal = () => setIsBookingModalOpen(false)
 
   const nextImage = () => {
     if (selectedImage !== null) {
@@ -202,11 +207,21 @@ export default function OurSpaces() {
           <p className="text-base sm:text-lg text-nyansa-dark-gray/80 mb-4 sm:mb-6">
             Want to experience our facilities firsthand?
           </p>
-          <button className="bg-nyansa-accent hover:bg-nyansa-accent/90 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors duration-200 touch-target">
+          <button 
+            onClick={openBookingModal}
+            className="bg-nyansa-accent hover:bg-nyansa-accent/90 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors duration-200 touch-target"
+            aria-label="Schedule a visit to our facilities"
+          >
             Schedule a Visit
           </button>
         </div>
       </div>
+
+      {/* Booking Modal */}
+      <BookingModal 
+        isOpen={isBookingModalOpen} 
+        onClose={closeBookingModal} 
+      />
     </section>
   )
 } 

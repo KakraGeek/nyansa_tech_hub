@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '@/styles/globals.css'
-import Navigation from '@/components/Navigation'
+import ConditionalNavigation from '@/components/ConditionalNavigation'
+import AdminAccess from '@/components/AdminAccess'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -86,10 +87,11 @@ export default function RootLayout({
         </a>
         
         <div className="min-h-screen bg-nyansa-white">
-          <Navigation />
+          <ConditionalNavigation />
           <main id="main-content" role="main">
             {children}
           </main>
+          <AdminAccess />
         </div>
       </body>
     </html>

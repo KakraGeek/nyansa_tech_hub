@@ -131,9 +131,7 @@ export default function ContactSection() {
       icon: MapPin,
       title: 'Visit Us',
       details: [
-        'Nyansa Tech Hub',
-        'Nyansa Square',
-        'Accra, Ghana'
+        'Nyansa Square, 4 Bathur Street, East Legon, Accra'
       ]
     },
     {
