@@ -288,9 +288,9 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               <h3 className="text-lg font-semibold text-nyansa-dark-gray mb-4">
                 Select a Date
               </h3>
-              <div className="grid grid-cols-7 gap-2 mb-4">
+              <div className="grid grid-cols-7 gap-1 mb-4">
                 {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
-                  <div key={day} className="text-center text-sm font-medium text-gray-500 py-2">
+                  <div key={day} className="text-center text-xs font-medium text-gray-500 py-2">
                     {day}
                   </div>
                 ))}
@@ -298,13 +298,13 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                   <button
                     key={day.date}
                     onClick={() => handleDateSelect(day.date)}
-                    className="p-3 text-center hover:bg-nyansa-light-blue/10 rounded-lg transition-colors duration-200"
+                    className="p-2 text-center hover:bg-nyansa-light-blue/10 rounded-lg transition-colors duration-200 min-h-[60px] flex flex-col justify-center"
                   >
-                    <div className="text-sm font-medium text-nyansa-dark-gray">
+                    <div className="text-sm font-medium text-nyansa-dark-gray mb-1">
                       {new Date(day.date).getDate()}
                     </div>
-                    <div className="text-xs text-nyansa-light-blue">
-                      Available
+                    <div className="text-xs text-nyansa-light-blue leading-tight">
+                      Open
                     </div>
                   </button>
                 ))}
@@ -321,13 +321,13 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               <h3 className="text-lg font-semibold text-nyansa-dark-gray mb-4">
                 Select a Time for {formatDate(selectedDate)}
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {selectedDaySlots.slots.map((slot) => (
                   <button
                     key={slot.time}
                     onClick={() => handleTimeSelect(slot.time)}
                     disabled={!slot.available || slot.booked}
-                    className={`p-4 rounded-lg border-2 transition-all duration-200 ${
+                    className={`p-3 rounded-lg border-2 transition-all duration-200 min-h-[60px] flex flex-col justify-center ${
                       slot.booked
                         ? 'border-gray-200 bg-gray-50 text-gray-400 cursor-not-allowed'
                         : slot.available
@@ -335,9 +335,9 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                         : 'border-gray-200 bg-gray-50 text-gray-400 cursor-not-allowed'
                     }`}
                   >
-                    <div className="text-lg font-semibold">{slot.time}</div>
-                    <div className="text-sm text-gray-600">
-                      {slot.booked ? 'Booked' : 'Available'}
+                    <div className="text-base font-semibold">{slot.time}</div>
+                    <div className="text-xs text-gray-600 mt-1">
+                      {slot.booked ? 'Booked' : 'Open'}
                     </div>
                   </button>
                 ))}
